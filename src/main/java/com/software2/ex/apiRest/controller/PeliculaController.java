@@ -66,7 +66,7 @@ public class PeliculaController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteLibro(@PathVariable Long id) {
+    public void deletePelicula(@PathVariable Long id) {
         peliculas.removeIf(pelicula -> pelicula.getId().equals(id));
     }
 
